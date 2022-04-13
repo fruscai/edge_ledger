@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Edge Ledger</title>
+  <!-- This is newest Font Awesome and thus pulls from internet, whereas course stylesheet ref pulls from v5 fontawesome which apparently does not require network connection -->
+  <!-- Favicon Insertion -->
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon_edgeledger.ico">
+  <script src="https://kit.fontawesome.com/0a26161e80.js" crossorigin="anonymous"></script>
+  <!-- PROPER STYLESHEET LINK - DON'T UNDERSTAND WHY IT'S NOT WORKING WITH THE KIT->SCRIPT THAT FONTAWESOME HAS ON THEIR WEBSITE...
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+  integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+  crossorigin="anonymous"
+/> -->
+  <link rel="stylesheet" href="/css/lightbox.min.css">
+  <link rel="stylesheet" href="/css/utilities.css">
+  <!-- main style sheet comes AFTER utility stylesheet so if anything from utilities needs to be overwritten for a specific element it can be done here -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body id="home">
+  <!-- Hero -->
+  <header class="hero">
+
+    <!-- Navbar -->
+    <div id="navbar" class="navbar top">
+      <h1 class="logo">
+        <span class="text-primary"><i class="fas fa-book-open"></i> Edge</span>Ledger
+      </h1>
+      <nav>
+        <ul>
+          <!-- using a #location will send link to a specific location on a page, similar to an anchor link in wix -->
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#cases">Cases</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Hero: Content -->
+    <div class="content">
+      <h1>The Sky Is The Limit</h1>
+      <p>We provide world class financial assistance</p>
+      <!-- fa-chevron-right: is right arrow -->
+      <a href="#about" class="btn"><i class="fas fa-chevron-right"></i> Read More</a>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- About: Icons -->
+    <section id="about" class="icons bg-light">
+      <div class="flex-items">
+        <div>
+          <i class="fas fa-university fa-2x"></i>
+          <div>
+            <h3>Investment Banking</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, maxime!</p>
+          </div>
+        </div>
+        <div>
+          <i class="fas fa-book-reader fa-2x"></i>
+          <div>
+            <h3>Portfolio Manager</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, maxime!</p>
+          </div>
+        </div>
+        <div>
+          <i class="fas fa-pencil-alt fa-2x"></i>
+          <div>
+            <h3>Tax & Custodial</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, maxime!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About:Solutions -->
+    <section id="solutions" class="solutions flex-columns">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img src="image_resources/home/people.jpg" alt="people" />
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-primary">
+            <h4>What you are looking for</h4>
+            <h2>We provide bespoke solutions</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+              illum, animi earum ea amet sequi reiciendis sit corporis sunt
+              iusto cupiditate odio maxime adipisci cumque eligendi nemo
+              dolore id itaque?
+            </p>
+            <a href="#about" class="btn btn-outline">
+              <i class="fas fa-chevron"></i>
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cases -->
+    <section id="cases" class="cases flex-grid section-padding">
+      <header class="section-header">
+        <h4>This is what we do</h4>
+        <h2>Business Cases</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, quis.</p>
+      </header>
+      <div class="row">
+        <div class="column">
+
+          <!-- Implementing Lightbox JS with cases images -->
+          <a href="/image_resources/cases/cases1.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Amet, quis.">
+            <img src="/image_resources/cases/cases1.jpg" alt="case-1">
+          </a>
+          <a href="/image_resources/cases/cases2.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Amet, quis.">
+            <img src="image_resources/cases/cases2.jpg" alt="case-2">
+          </a>
+        </div>
+        <div class="column">
+          <a href="/image_resources/cases/cases3.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Amet, quis.">
+            <img src="image_resources/cases/cases3.jpg" alt="case-3">
+          </a>
+          <a href="/image_resources/cases/cases4.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Amet, quis.">
+            <img src="image_resources/cases/cases4.jpg" alt="case-4">
+          </a>
+        </div>
+        <div class="column">
+          <a href="/image_resources/cases/cases5.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Amet, quis.">
+            <img src="image_resources/cases/cases5.jpg" alt="case-5">
+          </a>
+          <a href="/image_resources/cases/cases6.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Amet, quis.">
+            <img src="image_resources/cases/cases6.jpg" alt="case-6">
+          </a>
+        </div>
+        <div class="column">
+          <a href="/image_resources/cases/cases7.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Amet, quis.">
+            <img src="image_resources/cases/cases7.jpg" alt="case-7">
+          </a>
+          <a href="/image_resources/cases/cases8.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Amet, quis.">
+            <img src="image_resources/cases/cases8.jpg" alt="case-8">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <!-- flex-reverse class allows columns to be switched around with switching the entire HTML -->
+    <section id="blog" class="blog flex-columns flex-reverse">
+      <div class="row">
+        <div class="column">
+          <!-- Image -->
+          <div class="column-1">
+            <img src="/image_resources/home/blog.jpg" alt="people">
+          </div>
+        </div>
+        <div class="column">
+          <!-- Content -->
+          <div class="column-2 bg-secondary column-reverse">
+            <h4>April 16, 2020</h4>
+            <h2>Blog Post One</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos architecto obcaecati reiciendis fugiat ex,
+              saepe dolore qui distinctio expedita delectus laudantium consectetur quod aperiam quaerat quas, sequi quos
+              placeat maiores.</p>
+            <a href="/blog.html" class="btn btn-outline">
+              <i class="fas fa-chevron"></i>
+              Read Our Blog
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="team section-padding">
+      <header class="section-header">
+        <h4>Who we are</h4>
+        <h2>Our Professional Team</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, quis.</p>
+      </header>
+      <div class="flex-items">
+        <div>
+          <img src="/image_resources/team/person1.jpg" alt="John Doe">
+          <h4>John Doe</h4>
+          <p>President</p>
+        </div>
+        <div>
+          <img src="/image_resources/team/person2.jpg" alt="Jane Doe">
+          <h4>Jane Doe</h4>
+          <p>Vice President</p>
+        </div>
+        <div>
+          <img src="/image_resources/team/person3.jpg" alt="Steve Smith">
+          <h4>Steve Smith</h4>
+          <p>Marketing Head</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact flex-columns">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img src="image_resources/home/contact.jpg" alt="people" />
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-light">
+            <h2>Request Callback</h2>
+            <!-- Updating form with php -->
+            <form action="/process.php" method="POST" class="callback-form">
+              <div class="form-control">
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="Name">
+              </div>
+              <div class="form-control">
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="Email">
+              </div>
+              <div class="form-control">
+                <label for="phone"></label>
+                <input type="text" name="phone" id="phone" placeholder="Phone">
+              </div>
+              <div class="form-control">
+                <!-- Options for text areas within forms -->
+                <textarea name="message" id="message" cols="50" rows="5" placeholder="Message"></textarea>
+              </div>
+              <input type="submit" value="Send" id="submit" class="btn">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark">
+    <div class="social">
+      <!-- class of fa-brands required for social icons to function from font-awesome -->
+      <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2022 - EdgeLedger</p>
+  </footer>
+
+  <!-- Bringing in Jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- Bringing in lightbox js/css source  -->
+  <script src="js/lightbox.min.js"></script>
+
+  <!-- JS -->
+  <!-- <script>
+    // Navbar Transparency
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function () {
+      // YOffset checks vertical axis of scroll (up and down)
+      if (window.pageYOffset > 100) {
+        // removes class of top once scroll down begins
+        navbar.classList.remove('top');
+        if (!scrolled) {
+          // moves things along Y axis
+          navbar.style.transform = 'translateY(-200px)';
+        }
+        setTimeout(function () {
+          navbar.style.transform = 'translateY(0px)';
+          scrolled = true;
+        }, 300);
+      } else {
+        // adds top {background:transparency} class back when navbar reaches top
+        navbar.classList.add('top');
+        scrolled = false;
+      }
+    }
+
+    // Smooth Scroll - Enabled by JQuery Above
+    $('#navbar a, .btn').on('click', function (e) {
+      if (this.hash !== '') {
+        e.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate(
+          {
+            // the number value here can adjust where the specific position on the page is when scroll finishes
+            scrollTop: $(hash).offset().top - 80,
+          },
+          800
+        );
+      }
+    });
+  </script> -->
+
+  <!-- Updated ref to main.js rather than typing everything out like above -->
+  <script src="/js/main.js"></script>
+
+</body>
+
+</html>

@@ -39,3 +39,20 @@ $('#navbar a').on('click', function (e) {
     );
   }
 });
+
+
+$('#read-more a').on('click', function (e) {
+  if (this.hash !== '') {
+    e.preventDefault();
+
+    const hash = this.hash;
+
+    $('html, body').animate(
+      {
+        // the number value here can adjust where the specific position on the page is when scroll finishes
+        scrollTop: $(hash).offset().top - 80,
+      },
+      800
+    );
+  }
+});

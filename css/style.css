@@ -205,6 +205,10 @@ img {
   .team img {
     width: 70%;
   }
+
+  .footer-spacer {
+    display: none;
+  }
 }
 
 /* Blog */
@@ -245,4 +249,9 @@ img {
   padding: 10px;
   height: 200px;
   border: none;
+}
+
+.footer-spacer {
+  height: 30px;
+  width: 100%;
 }

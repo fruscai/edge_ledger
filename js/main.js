@@ -24,24 +24,10 @@ window.onscroll = function () {
 
 // Smooth Scroll - Enabled by JQuery Above
 // $('#navbar a, .btn').on('click', function (e) { REMOVED BTN CLASS TO ALLOW SUBMIT TO FUNCTION
-$('#navbar a').on('click', function (e) {
-  if (this.hash !== '') {
-    e.preventDefault();
 
-    const hash = this.hash;
+// commented out Smooth Scrolling JS because of scroll-behaviour: smooth; attribute in CSS
 
-    $('html, body').animate(
-      {
-        // the number value here can adjust where the specific position on the page is when scroll finishes
-        scrollTop: $(hash).offset().top - 80,
-      },
-      800
-    );
-  }
-});
-
-
-// $('#read-more a').on('click', function (e) {
+// $('#navbar a').on('click', function (e) {
 //   if (this.hash !== '') {
 //     e.preventDefault();
 
